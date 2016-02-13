@@ -9,7 +9,8 @@ public class DerivedInAnotherPackage extends Base {
         System.out.println(someProtectedFiled);
 
         // SAME BEHAVIOR IN JAVA AND C#
-        // For the below to work (instead of compilation error) the field would have to be public:
+        // For the below to work (instead of compilation error) the field would have to be public
+        // (notice access through qualifier of type Base instead of DerivedInAnotherPackage):
         // System.out.println(new Base().someProtectedFiled);
     }
 }
