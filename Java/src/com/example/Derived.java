@@ -8,6 +8,7 @@ public class Derived extends Base {
 
         // DIFFERENT BEHAVIOR IN JAVA AND C#!
         // Access to protected field is possible because classes are in the same package
+        // (notice access through qualifier of type Base instead of Derived)
         System.out.println(new Base().someProtectedFiled);
         // In C# the field would have to be public or protected internal (otherwise CS1540 error is produced)
     }
