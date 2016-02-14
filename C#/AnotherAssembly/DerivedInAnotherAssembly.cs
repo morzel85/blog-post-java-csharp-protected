@@ -1,6 +1,6 @@
 ﻿using Protected;
 
-namespace DerivedInAnotherAssembly // Namespace doesn't matter
+namespace AnotherAssembly // Namespace doesn't matter
 {
     public class DerivedInAnotherAssembly : Base
     {
